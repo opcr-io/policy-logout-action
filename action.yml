@@ -3,7 +3,7 @@ description: "Logout from Open Policy Registry (opcr.io)"
 author: "Aserto Inc."
 branding:
   icon: log-out
-  color: green
+  color: blue
 inputs:
   server:
     description: "registry service hostname"
