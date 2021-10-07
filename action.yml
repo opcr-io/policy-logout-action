@@ -1,0 +1,19 @@
+name: "Policy Logout"
+description: "Logout from Open Policy Registry (opcr.io)"
+author: "Aserto Inc."
+branding:
+  icon: log-out
+  color: green
+inputs:
+  server:
+    description: "registry service hostname"
+    required: true
+    default: "opcr.io"
+  verbosity:
+    description: "verbosity level [info|error|debug|trace]"
+    required: true
+    default: error
+runs:
+  using: docker
+  image: 'docker://ghcr.io/opcr-io/policy:latest'
+  entrypoint: /app/logout.sh
